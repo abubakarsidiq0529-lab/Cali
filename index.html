@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cali Engine | Privacy Protocol</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;600;800&family=Montserrat:wght@700;900&family=Rajdhani:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stealth-bg">
+        <div class="mesh-blob blob-1"></div>
+        <div class="mesh-blob blob-2"></div>
+        <div class="scanlines"></div>
+        <div class="blueprint-grid"></div>
+    </div>
+
+    <main class="container">
+        <header class="hero">
+            <div class="hero-image-container">
+                <img src="images/hero.jpg" alt="" class="hero-image">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="status-badge">ENGINE STATUS: SECURE</div>
+            <h1 class="glitch-text">PRIVACY<br><span class="highlight">PROTOCOL</span></h1>
+            <p class="subtitle">CALI ENGINE / v1.0 / TACTICAL DATA SENSITIVITY</p>
+        </header>
+
+        <section class="policy-card fade-in">
+            <div class="card-header">
+                <span class="icon">01</span>
+                <h2>DATA SOVEREIGNTY</h2>
+            </div>
+            <p>Your training data is your tactical advantage. The Cali Engine is engineered as a local-first system. Every rep, set, and biometric data point is stored exclusively within your device's protected sandbox. We do not harvest, monetize, or transmit your personal intelligence to external servers.</p>
+        </section>
+
+        <section class="policy-card fade-in" style="animation-delay: 0.2s;">
+            <div class="card-header">
+                <span class="icon">02</span>
+                <h2>LOCAL INFRASTRUCTURE</h2>
+            </div>
+            <p>Persistence is handled through high-performance local indexing. This allows for full functionality without an active uplink. Your progress is tied to your hardware identity—meaning if you lose your device, your local data remains secure and inaccessible to third parties.</p>
+        </section>
+
+        <section class="policy-card fade-in" style="animation-delay: 0.4s;">
+            <div class="card-header">
+                <span class="icon">03</span>
+                <h2>ANALYTICAL TELEMETRY</h2>
+            </div>
+            <p>We may utilize anonymized diagnostic logs solely for the purpose of engine optimization. This telemetry identifies technical failures and performance bottlenecks but never captures user-specific training routines, biometric markers, or physiological data.</p>
+        </section>
+
+        <footer class="contact-box fade-in" style="animation-delay: 0.6s;">
+            <h3>INTEL INQUIRIES</h3>
+            <a href="mailto:support@caliengine.com" class="email-link">SUPPORT@CALIENGINE.COM</a>
+            <div class="footer-meta">
+                <p>LAST UPDATED: AUGUST 13, 2026</p>
+                <p>CALI: CALISTHENICS & SKILLS ENGINE</p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Simple scroll reveal
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
